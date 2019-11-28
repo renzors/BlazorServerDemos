@@ -1,0 +1,14 @@
+﻿@page "/clock"
+
+<h3>Clock</h3>
+
+<div class="clock">
+    <h4>@Message</h4>
+    <div class="input-group">
+        <span class="@currentCss">@currentTime</span>
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="button" @onclick="StartStop">@buttonAction</button>
+        </div>
+    </div>
+    <div>@ChildContent</div>
+</div>
